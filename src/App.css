@@ -1,0 +1,68 @@
+:root {
+  --color-bg: white;
+  --color-font: black;
+  --color-active: brown;
+  --color-hover: #d8d8d8;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 40px;
+}
+
+.jatekter {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mezo {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: color-mix(in srgb var(--color-font) 80%);
+  border: 2px solid var(--color-active);
+  border-radius: 4px;
+}
+
+.mezo:hover {
+  background-color: var(--color-hover);
+}
+
+.modal-hatter {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--color-bg);
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (orientation: portrait) {
+
+}
