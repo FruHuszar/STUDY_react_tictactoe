@@ -1,4 +1,4 @@
-import type { Ertek } from "./adatok";
+import type { Ertek } from "../adatok";
 
 interface MezoProps {
   ertek: Ertek;
