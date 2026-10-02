@@ -3,6 +3,7 @@
   --color-font: black;
   --color-active: brown;
   --color-hover: #d8d8d8;
+  --tabla-meret: 3;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 .jatekter {
   display: grid;
-  grid-template-columns: repeat(3, 80px);
+  grid-template-columns: repeat(var(--tabla-meret), 80px);
   gap: 5px;
   justify-content: center;
   margin-top: 20px;
@@ -31,7 +32,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  background-color: color-mix(in srgb var(--color-font) 80%);
+  background-color: color-mix(in srgb, var(--color-font) 8%, var(--color-bg));
   border: 2px solid var(--color-active);
   border-radius: 4px;
 }
@@ -54,6 +55,16 @@ body {
   padding: 30px 40px;
   border-radius: 8px;
   text-align: center;
+}
+
+.tabla-meret {
+  display: block;
+  margin-top: 10px;
+}
+
+.tabla-meret select {
+  padding: 4px 8px;
+  font-size: 1rem;
 }
 
 .modal button {
